@@ -6,9 +6,9 @@
 # For baseurl:
 # Use '' for / or '/your-dir' for another directory
 
-title:		RLStevenson
-description:	'A Bootstrap based clone of the Hyde theme by mdo.'
-freetext:	'Released under an MIT license - feel free to make pull requests.'
+title:		Chenlu's Blog
+description:	'AI,python,R'
+freetext:	'None'
 baseurl:	'https://wnarrylu.github.io/wclnarry.github.io/'
 paginate:	3
 version:	0.1.0
