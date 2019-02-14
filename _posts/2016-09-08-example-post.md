@@ -5,7 +5,7 @@ author: Chenlu
 date: 2019-02-13
 ---
 
-##1.Two Sum
+## 1.Two Sum
 
 >Description: Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
