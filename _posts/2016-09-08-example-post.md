@@ -17,7 +17,7 @@ date: 2019-02-13
 
 >return [0, 1].
 
-##my solution
+## my solution
 
 ```{python}
 class Solution(object):
@@ -35,23 +35,23 @@ class Solution(object):
                 
 ```
 
-##2.Reverse Integer
+## 2.Reverse Integer
 
 >Given a 32-bit signed integer, reverse digits of an integer.
 
-###Example 1:
+### Example 1:
 
 >Input: 123
 
 >Output: 321
 
-###Example 2:
+### Example 2:
 
 >Input: -123
 
 >Output: -321
 
-###Example 3:
+### Example 3:
 
 >Input: 120
 
@@ -94,17 +94,17 @@ class Solution(object):
             
 ```
 
-##3.Palindrome Number
+## 3.Palindrome Number
 
 >Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
-###Example 1:
+### Example 1:
 
 >Input: 121
 
 >Output: true
 
-###Example 2:
+### Example 2:
 
 >Input: -121
 
@@ -112,7 +112,7 @@ class Solution(object):
 
 >Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
-###Example 3:
+### Example 3:
 
 >Input: 10
 
@@ -124,7 +124,7 @@ class Solution(object):
 
 >Coud you solve it without converting the integer to a string?
 
-##my Solution
+## my Solution
 
 ```{python}
 class Solution(object):
@@ -154,7 +154,7 @@ class Solution(object):
         
 ```
 
-##4.Roman to Integer
+## 4.Roman to Integer
 
 >Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
@@ -174,25 +174,25 @@ class Solution(object):
 
 >Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.
 
-###Example 1:
+### Example 1:
 
 >Input: "III"
 
 >Output: 3
 
-###Example 2:
+### Example 2:
 
 >Input: "IV"
 
 >Output: 4
 
-###Example 3:
+### Example 3:
 
 >Input: "IX"
 
 >Output: 9
 
-##Example 4:
+### Example 4:
 
 >Input: "LVIII"
 
@@ -200,7 +200,7 @@ class Solution(object):
 
 >Explanation: L = 50, V= 5, III = 3.
 
-###Example 5:
+### Example 5:
 
 >Input: "MCMXCIV"
 
@@ -208,7 +208,7 @@ class Solution(object):
 
 >Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
-##my Solution:
+## my Solution:
 
 ```{python}
 class Solution(object):
@@ -230,7 +230,7 @@ class Solution(object):
         return value
 ```
 
-##5.Valid Parentheses
+## 5.Valid Parentheses
 
 >Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -242,37 +242,37 @@ class Solution(object):
 
 >Note that an empty string is also considered valid.
 
-###Example 1:
+### Example 1:
 
 >Input: "()"
 
 >Output: true
 
-###Example 2:
+### Example 2:
 
 >Input: "()[]{}"
 
 >Output: true
 
-###Example 3:
+### Example 3:
 
 >Input: "(]"
 
 >Output: false
 
-###Example 4:
+### Example 4:
 
 >Input: "([)]"
 
 >Output: false
 
-###Example 5:
+### Example 5:
 
 >Input: "{[]}"
 
 >Output: true
 
-##my Solution:
+## my Solution:
 
 ```{python}
 class Solution(object):
@@ -304,17 +304,17 @@ class Solution(object):
             return False
 ```
 
-##6.Merge Two Sorted Lists
+## 6.Merge Two Sorted Lists
 
 >Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
-###Example:
+### Example:
 
 >Input: 1->2->4, 1->3->4
 
 >Output: 1->1->2->3->4->4
 
-##my Solution:
+## my Solution:
 
 ```{python}
 # Definition for singly-linked list.
@@ -343,13 +343,13 @@ class Solution(object):
         return a.next
 ```
 
-##7.Remove Duplicates from Sorted Array
+## 7.Remove Duplicates from Sorted Array
 
 >Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
 
 >Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 
-###Example 1:
+### Example 1:
 
 >Given nums = [1,1,2],
 
@@ -357,7 +357,7 @@ class Solution(object):
 
 >It doesn't matter what you leave beyond the returned length.
 
-###Example 2:
+### Example 2:
 
 >Given nums = [0,0,1,1,1,2,2,3,3,4],
 
@@ -365,7 +365,7 @@ class Solution(object):
 
 >It doesn't matter what values are set beyond the returned length.
 
-###Clarification:
+### Clarification:
 
 >Confused why the returned value is an integer but your answer is an array?
 
@@ -384,7 +384,7 @@ for (int i = 0; i < len; i++) {
 }
 ```
 
-##my Solution
+## my Solution
 ```{python}
 class Solution(object):
     def removeDuplicates(self, nums):
@@ -403,7 +403,7 @@ class Solution(object):
         return len(nums)
 ```
 
-##8.Remove Element
+## 8.Remove Element
 
 >Given an array nums and a value val, remove all instances of that value in-place and return the new length.
 
@@ -411,7 +411,7 @@ class Solution(object):
 
 >The order of elements can be changed. It doesn't matter what you leave beyond the new length.
 
-###Example 1:
+### Example 1:
 
 >Given nums = [3,2,2,3], val = 3,
 
@@ -419,7 +419,7 @@ class Solution(object):
 
 >It doesn't matter what you leave beyond the returned length.
 
->Example 2:
+### Example 2:
 
 >Given nums = [0,1,2,2,3,0,4,2], val = 2,
 
@@ -429,7 +429,7 @@ class Solution(object):
 
 >It doesn't matter what values are set beyond the returned length.
 
-###Clarification:
+### Clarification:
 
 >Confused why the returned value is an integer but your answer is an array?
 
@@ -448,7 +448,7 @@ for (int i = 0; i < len; i++) {
 }
 ```
 
-##my Solution
+## my Solution
 
 ```{python}
 class Solution(object):
@@ -467,31 +467,31 @@ class Solution(object):
         return len(nums)
 ```
 
-##9.Implement strStr()
+## 9.Implement strStr()
 
 >Implement strStr().
 
 >Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
 
-###Example 1:
+### Example 1:
 
 >Input: haystack = "hello", needle = "ll"
 
 >Output: 2
 
-###Example 2:
+### Example 2:
 
 >Input: haystack = "aaaaa", needle = "bba"
 
 >Output: -1
 
-###Clarification:
+### Clarification:
 
 >What should we return when needle is an empty string? This is a great question to ask during an interview.
 
 >For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's strstr() and Java's indexOf().
 
-##my Solution:
+## my Solution:
 
 ```{python}
 class Solution(object):
