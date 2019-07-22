@@ -32,15 +32,27 @@ the head and teamkills which is the number of times this player killed a teammat
 
 <table>
    <tr>
-      <td colspan="3"> <center> Classification of Variables </center> <td>
+      <td colspan="3"> <center> Classification of Variables </center> </td>
    </tr>
    <tr>
-      <td>  <center> Game type information <center> <td>  Gaming behavior  <td> <center> Rank information  <td>
+      <td>  <center> Game type information <center> <td>  Gaming behavior  <td> <center> Rank information  </td>
    </tr>
    <tr>
-      <td> <center> groupID <td> <center> Assists, heals,revives  <td> <center> killPlace <td>
+      <td> <center> groupID <td> <center> Assists, heals,revives  <td> <center> killPlace </td>
    </tr>
    <tr>
-      <td>  <center> Game type information <td> <center> Gaming behavior  <td>  <center> Rank information  <td>
+      <td>  <center> Game type information <td> <center> Gaming behavior  <td>  <center> Rank information  </td>
    </tr>
 </table>
+
+
+PICTURE
+
+### 2.2 Visualization
+-----
+
+Different matching types indicates different modes of games that players joined in. By plotting the target variable with different types of matching, densities of different matching types seem to be the same, which indicates that matching types does not have significant influence on target variable as they have the same pattern in the plot. The project will mainly sibe based on the variables about gaming behaviors.
+
+PICTURE
+
+Considering the variables about gaming behaviors, the correlation between all 17 variables with target “winPlacePerc” is shown in the picture below. Variables “weapons acquired”, “walk distance” and “boost” are highly correlated to the target variable compared to others.
