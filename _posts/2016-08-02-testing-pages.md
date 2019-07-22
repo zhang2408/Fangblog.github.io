@@ -33,3 +33,6 @@ the head and teamkills which is the number of times this player killed a teammat
 |  Game type information   | Gaming behavior  |  Rank information  |
 |  groupID | Assists, heals,revives | killPlace  |
 |  Game type information   | Gaming behavior  |  Rank information  |
+
+
+ 
