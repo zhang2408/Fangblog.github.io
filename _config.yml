@@ -20,6 +20,8 @@ piwikURL:	''
 
 markdown: kramdown
 highlighter: rouge
+excerpt_separator: <!--excerpt-->
+
 author:
  url:		https://www.exchangerate-api.com
  name:		'ExchangeRate-API'
