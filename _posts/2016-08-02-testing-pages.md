@@ -32,19 +32,15 @@ the head and teamkills which is the number of times this player killed a teammat
 
 <table>
    <tr>
-      <td colspan="3"> <center> Classification of Variables </center> </td>
+      <td colspan="3"> <center> Classification of Variables </center> <td>
    </tr>
    <tr>
-      <td>  <center> Game type information <center> <td>  Gaming behavior  <td> <center> Rank information  </td>
+      <td>  <center> Game type information <center> <td>  Gaming behavior  <td> <center> Rank information  <td>
    </tr>
    <tr>
-      <td> <center> groupID <td> <center> Assists, heals,revives  <td> <center> killPlace </td>
+      <td> <center> groupID <td> <center> Assists, heals,revives  <td> <center> killPlace <td>
    </tr>
    <tr>
-      <td>  <center> Game type information <td> <center> Gaming behavior  <td>  <center> Rank information  </td>
+      <td>  <center> Game type information <td> <center> Gaming behavior  <td>  <center> Rank information  <td>
    </tr>
 </table>
-
-
-
-![avatar](/picture/1.png)
