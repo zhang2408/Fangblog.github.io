@@ -18,6 +18,8 @@ ga:		'UA-123-456'
 piwikSiteID:	''
 piwikURL:	''
 
+markdown: kramdown
+highlighter: rouge
 author:
  url:		https://www.exchangerate-api.com
  name:		'ExchangeRate-API'
