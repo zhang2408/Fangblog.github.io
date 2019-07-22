@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Testing Pages
-author: ExchangeRate-API
-date: 2016-08-02
+title: PUBG Finish Placement Prediction
+author: Chenlu Wang
+date: 2019-08-02
 ---
 
-# PUBG Finish Placement Prediction
+
 
 
 ## Abstract
