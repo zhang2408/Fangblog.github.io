@@ -19,3 +19,17 @@ This project uses ideas of machine learning based on logistic regression, random
 -----
 
 PlayerUnknown's  BattleGrounds  (PUBG)  is  an  online  multiplayer  battle  game developed and published by PUBG Corporation, a subsidiary of South Korean video game  company  Bluehole.  The gameis  based  on  previous  mods  that  were  created  by Brendan "PlayerUnknown" Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a standalone game under Greene's creative direction. In  the  game,  up  to  one  hundred  players parachute  onto  an  island  and  scavenge  for weapons  and  equipment  to  kill  others  while  avoiding  getting  killed  themselves.  The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.
+
+## 2. Exploratory Data Analysis
+-----
+
+### 2.1 summary
+-----
+
+The dataset is made up of 29 variables with size 29*4446966. All variables can be grouped into three different classes. First class consists variables showing the information of matching and type of games, like groupID which shows members in different groups and matchType showing whether player played the game alone or with others. Second class consists variables about performance of the players, like headshotKills which shows how many enemies player eliminated by directly shooting
+the head and teamkills which is the number of times this player killed a teammate. The last class are variables describing the rank of players, like winPlacePerc which is the percentile winning placement and rankPoints, which shows Elo-like ranking of players.
+
+|  Classification of Variables |
+|  Game type information   | Gaming behavior  |  Rank information  |
+|  groupID | Assists, heals,revives | killPlace  |
+|  Game type information   | Gaming behavior  |  Rank information  |
