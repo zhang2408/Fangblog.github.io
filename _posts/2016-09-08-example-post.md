@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Solutions 
-author: Chenlu
+author: Chenlu Wang
 date: 2019-02-13
 ---
+
+<!-- more -->
+
 
 ## 1.Two Sum
 
