@@ -183,7 +183,7 @@ In our XGBoost model, after several parameters tuning, we set iteration rounds =
 
 
 #### 3.2.5 KNN Model
------
+---------
 
 <p style="text-align:justify">
 k-Nearest Neighbor, referred to as KNN, is a commonly used supervised learning method. Its working mechanism is straightforward. First, give a test sample. Then based on some distance metric, find the k training samples closest to the training set. Finally, the results are predicted based on the information of the k "neighbors." In the classification task, the "voting method" is generally used. In other words, the category with the most occurrences among the k samples is selected as the prediction result. Given a test sample x, if the sample closest to it is z, the probability of error in the KNN model is the probability that the x and z categories are different, i.e.，
