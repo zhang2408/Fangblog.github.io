@@ -20,7 +20,7 @@ piwikURL:	''
 
 markdown: kramdown
 highlighter: rouge
-excerpt_separator: <!--excerpt-->
+excerpt_separator: "<!-- more -->"
 
 
 author:
