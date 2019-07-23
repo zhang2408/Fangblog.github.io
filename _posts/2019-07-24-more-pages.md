@@ -31,7 +31,7 @@ PlayerUnknown's  BattleGrounds  (PUBG)  is  an  online  multiplayer  battle  gam
 ## 2. Exploratory Data Analysis
 -----
 
-### 2.1 summary
+### 2.1 Summary
 -----
 
 <p style="text-align:justify">
@@ -140,6 +140,7 @@ Linear Discriminant Analysis, or LDA for short, is a classic current learning me
 The idea of LDA is elementary. First, give a training sample. Then try to project the sample onto a straight line. Then, we can find that similar samples are as close as possible, while different samples are as far away as possible. Finally, when predicting a new sample, the new sample is also projected onto this line. The category of the sample is then determined based on the position of the projected point. We apply LDA to our dataset. We found that LDA performed best when target set was divided into two categories. Its mae value can go to 0.1.
 </p>
 
+-----
 #### 3.2.2 Logistic Regression
 -----
 <p style="text-align:justify">
@@ -150,6 +151,7 @@ Logistic Regression is the appropriate regression analysis to conduct when the d
 In our dataset, although our prediction value (win place percentage) is not a binary value, logistic regression can provide us the prediction of probability on test set and we use it to calculate the mean absolute error. Besides, some of the features (especially after normalization), such as the head shot rate we plot before, have similar curves with sigmoid function, which most of the values lie at 0 and 1. Therefore, we can use the logistic regression in this dataset. We derive a 0.05331387 MAE score on validation set (local), and a 0.08915 MAE score on test set (on Kaggle).
 </p>
 
+-----
 #### 3.2.3 Random Forest
 -----
 
@@ -165,6 +167,7 @@ The random forest model provides a 0.05331419 MAE score on validation set. Besid
 <img src="/wclnarry.github.io/picture/9.png" alt="drawing" width="500"/>
 </center>
 
+-----
 #### 3.2.4 XGBoost
 -----
 
@@ -181,7 +184,7 @@ In our XGBoost model, after several parameters tuning, we set iteration rounds =
 </center>
 
 
-
+-------
 #### 3.2.5 KNN Model
 ---------
 
@@ -195,6 +198,7 @@ $$P(error)=1-\sum_{c\in \Gamma}P(c|x)P(c|z)$$
 In the regression problem, the average method is generally used. In other words, the average of the values of the k samples is selected as the prediction result. Finally, we can choose to perform weighted averaging or weighted voting based on distance, and the closer the sample is, the higher the weight. After applying the KNN model to our dataset, we noticed that the KNN model performed well and the MAE value could go to 0.07 after adjusting the parameters.
 </p>
 
+-----
 #### 3.2.6 MLP Model
 -----
 <p style="text-align:justify">
@@ -204,6 +208,7 @@ Multilayer Perceptron (MLP) is also called Artificial Neural Network (ANN). Perc
 <p style="text-align:justify">
 An MLP thinks as a directed graph consisting of multiple node layers, each connected to the next layer. In addition to the input nodes, each node is a neuron with a nonlinear activation function. MLP is a standard supervised learning algorithm. For our dataset, we use the MLPRegressor function in sklearn. In the most ideal state, our mae can reach 0.02. But for our program, our mae value is 0.07. The hidden layer we chose is 40, the training method is Adam, and the activation function is logical.
 </p>
+
 
 ### 3.3 Ensemble Model
 -----
