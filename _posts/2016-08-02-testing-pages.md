@@ -19,6 +19,8 @@ The project is mainly based on the dataset of game Player Unknown’s Battle Gro
 This project uses ideas of machine learning based on logistic regression, random forest and xgboost for fitting and prediction. The goal is to use dataset given through Kaggle to predict the target variable and have ideal error based on mean squared error loss function. The result of this project is provided by xgboost model with 0.02 mse.
 </p>
 
+<!-- more -->
+
 ## 1.Introduction
 -----
 
@@ -209,9 +211,3 @@ Firstly, based on the complexity of models fitted, the further work we need to d
 <p style="text-align:justify">
 Last but not least, more efforts are needed to identify the abnormal data in our data set. For example, the 100 percent head shoot rate may cause by using some of unfair methods such as hacker or auto-lock-head. Establishing outlier detection mechanism will have practical meaning of predicting the probability of winning the game.
 </p>
-
-
-
-
-
-<!-- more -->
