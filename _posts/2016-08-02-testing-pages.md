@@ -169,6 +169,49 @@ k-Nearest Neighbor, referred to as KNN, is a commonly used supervised learning m
 
 $$P(error)=1-\sum_{c\in \Gamma}P(c|x)P(c|z)$$
 
+<p style="text-align:justify">
+In the regression problem, the average method is generally used. In other words, the average of the values of the k samples is selected as the prediction result. Finally, we can choose to perform weighted averaging or weighted voting based on distance, and the closer the sample is, the higher the weight. After applying the KNN model to our dataset, we noticed that the KNN model performed well and the MAE value could go to 0.07 after adjusting the parameters.
+</p>
+
+#### 3.2.6 MLP Model
+-----
+<p style="text-align:justify">
+Multilayer Perceptron (MLP) is also called Artificial Neural Network (ANN). Perception is the basic processing element. It has input and output. Each input is associated with a connection weight, and then the output is the weighted sum of the inputs. In addition to the input and output layers, there can be multiple hidden layers in between. The simplest MLP contains only one hidden layer, that is, three layers.
+</p>
+
+<p style="text-align:justify">
+An MLP thinks as a directed graph consisting of multiple node layers, each connected to the next layer. In addition to the input nodes, each node is a neuron with a nonlinear activation function. MLP is a standard supervised learning algorithm. For our dataset, we use the MLPRegressor function in sklearn. In the most ideal state, our mae can reach 0.02. But for our program, our mae value is 0.07. The hidden layer we chose is 40, the training method is Adam, and the activation function is logical.
+</p>
+
+### 3.3 Ensemble Model
+-----
+<p style="text-align:justify">
+We use linear model, XGBoost and neural network to ensemble our prediction result. However, the prediction of the ensemble models did not beat our XGBoost model. The XGBoost ensemble model and neural network ensemble model both have MAE around 0.036-0.04, which are closed but not as good as the result of single XGBoost model.
+</p>
+
+## 4. Discussion
+-----
+
+### 4.1 Summary
+-----
+<p style="text-align:justify">
+The overall performance of our models are as following table. Since we use sub sample to train the model on validation set, the performance of XGBoost model on validation set is not as good as the result on test set. Besides, due to the limit of calculating capacity, we cannot use the full dataset to train the MLP model. We will try to use AWS or sparkr to solve the problem and fit the model in the further work.
+</p>
+
+form HERE
+
+### 4.2 Furture work
+-----
+<p style="text-align:justify">
+Firstly, based on the complexity of models fitted, the further work we need to do is to stack all the results of models that we used, and train the new model based on stack results. The goal is to improve the accuracy and efficiency of the final model. Secondly, as the accuracy of our MLP model is less than 0.02 which is ideal, we can use the parameters fitted in original MP as initial value to renew the MLP model. Thirdly, we need to put further effort on fitting the parameters in random forest to get peak value.
+</p>
+
+<p style="text-align:justify">
+Last but not least, more efforts are needed to identify the abnormal data in our data set. For example, the 100 percent head shoot rate may cause by using some of unfair methods such as hacker or auto-lock-head. Establishing outlier detection mechanism will have practical meaning of predicting the probability of winning the game.
+</p>
+
+
+
 
 
 <!-- more -->
