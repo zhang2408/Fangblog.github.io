@@ -39,7 +39,9 @@ The dataset is made up of 29 variables with size 29*4446966. All variables can b
 the head and teamkills which is the number of times this player killed a teammate. The last class are variables describing the rank of players, like winPlacePerc which is the percentile winning placement and rankPoints, which shows Elo-like ranking of players.
 </p>
 
-
+<center>
+<img src="/wclnarry.github.io/picture/12.png" alt="drawing" width="500"/>
+</center>
 
 <center>
 <img src="/wclnarry.github.io/picture/1.png" alt="drawing" width="500"/>
@@ -225,7 +227,10 @@ We use linear model, XGBoost and neural network to ensemble our prediction resul
 The overall performance of our models are as following table. Since we use sub sample to train the model on validation set, the performance of XGBoost model on validation set is not as good as the result on test set. Besides, due to the limit of calculating capacity, we cannot use the full dataset to train the MLP model. We will try to use AWS or sparkr to solve the problem and fit the model in the further work.
 </p>
 
-form HERE
+<center>
+<img src="/wclnarry.github.io/picture/13.png" alt="drawing" width="500"/>
+</center>
+
 
 ### 4.2 Furture work
 -----
