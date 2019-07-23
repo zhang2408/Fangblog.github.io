@@ -37,22 +37,6 @@ The dataset is made up of 29 variables with size 29*4446966. All variables can b
 the head and teamkills which is the number of times this player killed a teammate. The last class are variables describing the rank of players, like winPlacePerc which is the percentile winning placement and rankPoints, which shows Elo-like ranking of players.
 </p>
 
-<center>
-<table>
-   <tr>
-      <td colspan="3"> <center> Classification of Variables </center> </td>
-   </tr>
-   <tr>
-      <td>  <center> Game type information <center> <td>  Gaming behavior  <td> <center> Rank information  </td>
-   </tr>
-   <tr>
-      <td> <center> groupID <td> <center> Assists, heals,revives  <td> <center> killPlace </td>
-   </tr>
-   <tr>
-      <td>  <center> Game type information <td> <center> Gaming behavior  <td>  <center> Rank information  </td>
-   </tr>
-</table>
-<center>
 
 
 <center>
@@ -183,6 +167,8 @@ In our XGBoost model, after several parameters tuning, we set iteration rounds =
 k-Nearest Neighbor, referred to as KNN, is a commonly used supervised learning method. Its working mechanism is straightforward. First, give a test sample. Then based on some distance metric, find the k training samples closest to the training set. Finally, the results are predicted based on the information of the k "neighbors." In the classification task, the "voting method" is generally used. In other words, the category with the most occurrences among the k samples is selected as the prediction result. Given a test sample x, if the sample closest to it is z, the probability of error in the KNN model is the probability that the x and z categories are different, i.e.，
 </p>
 
-$$P(error)$$
+$$P(error)=1-\sum_{c\in \Gamma}P(c|x)P(c|z)$$
+
+
 
 <!-- more -->
