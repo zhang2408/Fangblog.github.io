@@ -231,3 +231,174 @@ Firstly, based on the complexity of models fitted, the further work we need to d
 <p style="text-align:justify">
 Last but not least, more efforts are needed to identify the abnormal data in our data set. For example, the 100 percent head shoot rate may cause by using some of unfair methods such as hacker or auto-lock-head. Establishing outlier detection mechanism will have practical meaning of predicting the probability of winning the game.
 </p>
+
+
+## 5. Code
+------
+
+### 5.1 KNN Model
+```
+import numpy as np
+import pandas as pd
+df_train = pd.read_csv('/Users/wangchenlu/Downloads/data.csv')
+train=df_train.reset_index()
+target="winPlacePerc"
+train_columns=list(train.columns)
+train_columns.remove("matchId")
+train_columns.remove("groupId")
+train_columns.remove("index")
+train_columns.remove("Unnamed: 0")
+from numpy import NaN
+from pandas import Series, DataFrame
+import numpy as np
+x_train=pd.DataFrame(x_train)
+x_test=pd.DataFrame(x_test)
+x_train = x_train.dropna()
+x_test=x_test.dropna()
+
+y_train=x_train[target]
+y_test=x_test[target]
+x_train=x_train.drop([target],axis=1)
+x_test=x_test.drop([target],axis=1)
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
+from sklearn import svm
+from sklearn.neighbors import KNeighborsRegressor
+LC=LabelEncoder()
+KNN=KNeighborsRegressor()
+KNN.fit(x_train,y_train)
+result_KNN=KNN.predict(x_test)
+import matplotlib.pyplot as plt
+plt.plot(result_KNN,color='r') plt.show()
+a=abs(result_KNN-y_test)
+a=np.mean(a)
+print a
+```
+
+### 5.2 LDA Model
+-----
+
+```
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn import preprocessing
+from ultimate.mlp import MLP
+import gc
+df_train = pd.read_csv('/Users/wangchenlu/Downloads/data.csv')
+train=df_train.reset_index()
+target="winPlacePerc"
+train_columns=list(train.columns)
+train_columns.remove("matchId")
+train_columns.remove("groupId")
+train_columns.remove("index")
+train_columns.remove("Unnamed: 0")
+new_train=train[0:20000]
+new_y=new_train[target]
+x_train=new_train[train_columns]
+
+new_test=train[20000:30000]
+x_test=new_test[train_columns]
+#missing data
+from numpy import NaN
+from pandas import Series, DataFrame
+import numpy as np
+from sklearn.preprocessing import Imputer
+x_train=pd.DataFrame(x_train)
+x_test=pd.DataFrame(x_test)
+x_train = x_train.dropna()
+x_test=x_test.dropna()
+y_train=x_train[target]
+y_test=x_test[target]
+x_train=x_train.drop([target],axis=1)
+x_test=x_test.drop([target],axis=1)
+y_train=10*y_train
+y_test=10*y_test
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn import model_selection
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.metrics import mean_squared_error
+import warnings
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.figure_factory as ff
+import plotly.offline as py
+
+import plotly.graph_objs as go
+import plotly.tools as tls
+
+from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+from plotly import tools
+y_train=y_train.astype(int)
+y_test=y_test.astype(int)
+#Running LDA Model
+LDA = LinearDiscriminantAnalysis()
+LDA.fit(x_train, y_train)
+#Predicting values for test data
+pred=LDA.predict(x_test)
+```
+
+### 5.3 MLP Model
+-----
+
+```
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn import preprocessing
+import gc
+df_train = pd.read_csv('/Users/wangchenlu/Downloads/data.csv')
+train=df_train.reset_index()
+target="winPlacePerc"
+train_columns=list(train.columns)
+train_columns.remove("matchId")
+train_columns.remove("groupId")
+train_columns.remove("index")
+train_columns.remove("Unnamed: 0")
+new_train=train[0:20000]
+new_y=new_train[target]
+x_train=new_train[train_columns]
+new_test=train[20000:30000]
+x_test=new_test[train_columns]
+
+#missing data
+from numpy import NaN
+from pandas import Series, DataFrame import numpy as np
+from sklearn.preprocessing import Imputer
+x_train=pd.DataFrame(x_train)
+x_test=pd.DataFrame(x_test)
+x_train = x_train.dropna()
+x_test=x_test.dropna()
+#
+y_train=x_train[target]
+y_test=x_test[target]
+x_train=x_train.drop([target],axis=1)
+x_test=x_test.drop([target],axis=1)
+import numpy as np
+import pandas as pd
+from sklearn import preprocessing
+from ultimate.mlp import MLP import gc, sys
+gc.enable()
+x_train=np.array(x_train,dtype=np.float64)
+x_test=np.array(x_test,dtype=np.float64)
+y_train=np.array(y_train,dtype=np.float64)
+y_test=np.array(y_test,dtype=np.float64)
+#y_train = y_train * 2 - 1
+from sklearn.neural_network import MLPRegressor
+
+mlp = MLPRegressor(solver='adam',activation='logistic', batch_size=1000,hidden_layer_sizes=(x_train.shape[1], 40,40,40,40,1),alpha=1e-5, random_state=1,max_iter=300,verbose=True,learning_rate_init=0.001,early_stopping =True,tol=0.00001)
+
+mlp.fit(x_train,y_train)
+pred = mlp.predict(x_test)
+print pred
+a=abs(pred-y_test)
+a=np.mean(a)
+print a
+```
