@@ -11,7 +11,10 @@ date: 2019-08-02
 ## Abstract
 -----
 
-The project is mainly based on the dataset of game Player Unknown’s Battle Ground. PUBG is a player versus player shooter game in which up to 100 players start in each match and they can be on teams which get ranked at the end of the game based on how many other teams are still alive when they are eliminated. In game, players can pick up different munitions, revive downed-but-not-out (knocked) teammates, drive vehicles, swim, run, shoot, and experience all of the consequences -- such as falling too far or running themselves over and eliminating themselves.
+<p>
+& emsp;The project is mainly based on the dataset of game Player Unknown’s Battle Ground. PUBG is a player versus player shooter game in which up to 100 players start in each match and they can be on teams which get ranked at the end of the game based on how many other teams are still alive when they are eliminated. In game, players can pick up different munitions, revive downed-but-not-out (knocked) teammates, drive vehicles, swim, run, shoot, and experience all of the consequences -- such as falling too far or running themselves over and eliminating themselves.
+</p>
+
 
 This project uses ideas of machine learning based on logistic regression, random forest and xgboost for fitting and prediction. The goal is to use dataset given through Kaggle to predict the target variable and have ideal error based on mean squared error loss function. The result of this project is provided by xgboost model with 0.02 mse.
 
