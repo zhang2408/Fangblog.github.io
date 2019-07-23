@@ -38,8 +38,9 @@ the head and teamkills which is the number of times this player killed a teammat
 </p>
 
 
-
+<center>
 <img src="/wclnarry.github.io/picture/1.png" alt="drawing" width="500"/>
+</center>
 
 ### 2.2 Visualization
 -----
