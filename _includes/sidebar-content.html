@@ -1,6 +1,10 @@
 
 	<div class="sidebar-content">
-
+		<div class="sidebar-item">
+	    <p>
+	      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+	    </p>
+	  </div>
 		<a href="{% if site.baseurl != '' %}{{ site.baseurl }}/{% else %}/{% endif %}"><h1>{{ site.title }}</h1></a>
 		<p>{{ site.description }}</p>
 
