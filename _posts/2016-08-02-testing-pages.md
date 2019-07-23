@@ -34,9 +34,7 @@ the head and teamkills which is the number of times this player killed a teammat
 
 
 
-![gitment]({{'wclnarry.github.io/blog/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/1.png'|prepend:sit.baseurl}})
 
-![avatar](wclnarry.github.io/picture/1.png)
 
 <img src="/wclnarry.github.io/picture/1.png"/>
 
@@ -45,29 +43,30 @@ the head and teamkills which is the number of times this player killed a teammat
 
 Different matching types indicates different modes of games that players joined in. By plotting the target variable with different types of matching, densities of different matching types seem to be the same, which indicates that matching types does not have significant influence on target variable as they have the same pattern in the plot. The project will mainly sibe based on the variables about gaming behaviors.
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/2.png)
+<img src="/wclnarry.github.io/picture/2.png"/>
+
 
 Considering the variables about gaming behaviors, the correlation between all 17 variables with target “winPlacePerc” is shown in the picture below. Variables “weapons acquired”, “walk distance” and “boost” are highly correlated to the target variable compared to others.
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/3.png)
+<img src="/wclnarry.github.io/picture/3.png"/>
 
 “Weapons acquired” have the most value below 6 and the range of it is from 0 to 236. Reclassify the variable into level 0,2,3,4,5 and talent and draw the histogram with target variable, the number of weapons acquired show opposite relationship with “winPlacePerc” as more weapons players acquired, higher probability they win the game. The pattern of acquiring more than 6 weapons is the same to that acquiring 5 weapons. Similarly, the pattern of 3 weapons is the same to that of 4 weapons.
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/4.png)
+<img src="/wclnarry.github.io/picture/4.png"/>
 
 “Walk distance” is the variable describing the total distance that players traveled on foot measured in meters. Considering the other two variables, “swim distance” and “ride distance” are also based on the distance. Adding these three into a new variable, “total distance” and it has high correlation with target variable. Compared to the correlation between total distance and target variable, walk distance has higher correlation with target. As the walk distance has higher weight over other two variables and higher correlation with winPlacePerc, the project will mainly focus on the walk distance instead of swim and ride distance. The higher walk distance, the more likely to win the game.
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/5.png)
+<img src="/wclnarry.github.io/picture/5.png"/>
 
 “Boost” shows the number of boost items used. The most of the “boosts” value are less than 3,but the range of it is from 0 to 33. Reclassify the boost data into four classes with 0,1,2,3 and talent. The probability of players who use less than one boost winning the game is probably less than 0.75 and of players who use more than three boosts is more than 0.65.
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/6.png)
+<img src="/wclnarry.github.io/picture/6.png"/>
 
 Considering to see the relationship between variables about killing behaviors and how they affect the target variables, we calculate the head shot rate with headshot kills and total kills. The plot shows there is high correlation between head shot rate and probability of winning the game. The higher headshot rate, the higher probability of winning the game. Another variable about killing behaviors is kill streak which shows max number of enemy that players killed in a short amount of time. By calculating the kill streak rate with number of streak kills and total kills, the pattern of kill streak rate is similar to the head shot rate, indicating the kill streak rate has similar relationship with probability of winning to head shot rate. Lastly, calculating the damage per kill with “damageDealt” and total kills. The pattern of damage per kill and winPlacePerc is similar to a straight line which indicates the high relationship between damage per kill and target variable. The higher damage per kill, the fairer shooting and higher probability of winning the game. Damage per kill tends to have more significant effects on target variables than other data on killing behaviors and this project will focus on this variable when fitting the model.
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/7.png)
+<img src="/wclnarry.github.io/picture/7.png"/>
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/8.png)
+<img src="/wclnarry.github.io/picture/8.png"/>
 
 ## 3. Modeling prediction and Evaluation
 -----
@@ -109,7 +108,7 @@ Random Forest is an ensemble learning method mainly for classification and regre
 
 The random forest model provides a 0.05331419 MAE score on validation set. Besides, we can check the ranking of the importance of features, the results are as following. The rank of statistics of walk distance, kill place and items collected play most important roles in our random forest model.
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/9.png)
+<img src="/wclnarry.github.io/picture/9.png"/>
 
 #### 3.2.4 XGBoost
 -----
@@ -118,7 +117,7 @@ eXtreme Gradient Boosting (XGBoost) is an enhanced version of gradient boosted d
 
 In our XGBoost model, after several parameters tuning, we set iteration rounds = 120, learning rate = 0.09, depth of tree = 20, subsample proportion = 0.5, loss function of the residual error = linear regression, evaluation method = MAE, and so on. And we obtain our best result with XGBoost model, they are 0.03513282 on validation set, and 0.02827 on test set (Kaggle).
 
-![avatar](/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/10.png)
+<img src="/wclnarry.github.io/picture/10.png"/>
 
 #### 3.2.5 KNN Model
 -----
