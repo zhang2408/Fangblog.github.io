@@ -36,7 +36,7 @@ the head and teamkills which is the number of times this player killed a teammat
 
 ![gitment]({{'wclnarry.github.io/blog/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/1.png'|prepend:sit.baseurl}})
 
-![avatar]({{site.baseurl}}/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/1.png)
+![PNG]({{site.baseurl}}/Users/wangchenlu/Documents/GitHub/wclnarry.github.io/picture/1.png)
 
 
 
