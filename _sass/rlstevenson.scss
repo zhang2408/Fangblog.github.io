@@ -56,9 +56,10 @@ p {
 	padding-left: 5em;
 	max-width: 160rem;
 }
-@media (max-width: 900px) {
+@media (min-width: 900px) {
 	.content {
 		padding-left: 1em;
+		max-width: 160rem;
 	}
 }
 .post {
