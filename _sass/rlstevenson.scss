@@ -32,15 +32,30 @@ h1, h2, h3, h4 {
 p {
 	font-family: Roboto, sans-serif;
 	font-size: 1.2em;
+	font-weight: 400;
+	color: #313131;
+  letter-spacing: -.025rem;
 }
 
+/*
+ * Wrapper
+ *
+ * The wrapper is used to position site content when the sidebar is toggled. We
+ * use an outter wrap to position the sidebar without interferring with the
+ * regular page content.
+ */
 
+.wrap {
+  position: relative;
+  width: 100%;
+}
 
 /* BLOG CONTENT */
 
 
 .content {
 	padding-left: 5em;
+	max-width: 28rem;
 }
 @media (max-width: 900px) {
 	.content {
