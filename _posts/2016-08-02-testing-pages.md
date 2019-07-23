@@ -30,20 +30,7 @@ The dataset is made up of 29 variables with size 29*4446966. All variables can b
 the head and teamkills which is the number of times this player killed a teammate. The last class are variables describing the rank of players, like winPlacePerc which is the percentile winning placement and rankPoints, which shows Elo-like ranking of players.
 
 
-<table>
-   <tr>
-      <td colspan="3"> <center> Classification of Variables </center> </td>
-   </tr>
-   <tr>
-      <td>  <center> Game type information <center> <td>  Gaming behavior  <td> <center> Rank information  </td>
-   </tr>
-   <tr>
-      <td> <center> groupID <td> <center> Assists, heals,revives  <td> <center> killPlace </td>
-   </tr>
-   <tr>
-      <td>  <center> Game type information <td> <center> Gaming behavior  <td>  <center> Rank information  </td>
-   </tr>
-</table>
+
 
 
 
