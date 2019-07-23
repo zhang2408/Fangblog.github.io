@@ -59,11 +59,11 @@ p {
 @media (min-width: 900px) {
 	.content {
 		padding-left: 1em;
-		max-width: 160rem;
 	}
 }
 .post {
 	margin-bottom: 3em;
+	max-width: 660rem;
 }
 .post .post-heading {
 	margin-bottom: 1em;
@@ -76,6 +76,7 @@ p {
 	margin-bottom: 0.2em;
 	margin-top: 1em;
 	font-weight: bold;
+	max-width: 660rem;
 }
 .post h2 {
 	font-size: 1.8em;
