@@ -21,9 +21,7 @@ piwikURL:	''
 markdown: kramdown
 highlighter: rouge
 excerpt_separator: <!--excerpt-->
-archive: 1
-category: 1
-tag: 1
+
 
 author:
  url:		https://www.exchangerate-api.com
