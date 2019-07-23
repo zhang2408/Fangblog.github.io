@@ -166,3 +166,5 @@ k-Nearest Neighbor, referred to as KNN, is a commonly used supervised learning m
 </p>
 
 $$P(error)$$
+
+<!-- more -->
