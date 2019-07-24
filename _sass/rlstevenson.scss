@@ -54,7 +54,7 @@ p {
 
 .content {
 	padding-left: 5em;
-	width: 70%;
+	width: 70%; /* at this place to change the ratio */
 }
 @media (min-width: 900px) {
 	.content {
