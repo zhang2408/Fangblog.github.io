@@ -6,10 +6,10 @@
 # For baseurl:
 # Use '' for / or '/your-dir' for another directory
 
-title:		Chenlu's Blog
-description:	'AI,python,R'
+title:		Fang's Blog
+description:	'Hazard analyst'
 freetext:	'None'
-baseurl:	'https://wnarrylu.github.io/wclnarry.github.io/'
+baseurl:	'https://zhang2408.github.io/Fangblog.github.io/'
 paginate:	3
 version:	1.0.0
 colorscheme:	scheme-gulfracing
